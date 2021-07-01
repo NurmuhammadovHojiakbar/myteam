@@ -1,0 +1,13 @@
+.site-header__container{
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+@include breakpoint-down(650px){
+    .site-header__container{
+        align-items: unset;
+        flex-direction: column;
+    }
+}
