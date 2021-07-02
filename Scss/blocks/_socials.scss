@@ -1,0 +1,42 @@
+.footer-socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+
+    p{
+        opacity: 0.6;
+    }
+}
+.socials{
+    margin-left: -16px;
+}
+
+.social-link{
+    display: inline;
+    margin-left: 16px;
+
+    path{
+        transition: 0.3s ease;
+    }
+
+    &:hover path{
+        fill: $light-colar;
+    }
+}
+
+@include breakpoint-down(780px){
+    .footer-socials{
+        flex-direction: row;
+    }
+}
+
+@include breakpoint-down(500px){
+    .footer-socials{
+        flex-direction: column;
+        align-items: center;
+    }  
+    .socials{
+        margin-bottom: 16px;
+    }  
+}
