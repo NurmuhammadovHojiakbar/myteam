@@ -854,6 +854,134 @@ img {
   }
 }
 
+.teams {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background: #012F34 url("../img/teams.png") no-repeat 100% 100%;
+}
+
+.teams__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.teams__container-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 450px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.teams__container-title::before {
+  content: "";
+  display: block;
+  margin-bottom: 54px;
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+}
+
+.advantages {
+  max-width: 540px;
+  margin-bottom: -32px;
+}
+
+.advantages-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.advantages-wrapper::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  display: block;
+  margin-right: 23px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.individual::before {
+  background-image: url("../img/individual.svg");
+}
+
+.implement::before {
+  background-image: url("../img/implement.svg");
+}
+
+.productivity::before {
+  background-image: url("../img/productivity.svg");
+}
+
+.advantages-text__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F67E7E;
+}
+
+.advantages-text__paragraph {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1050px) {
+  .teams__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .teams__container-title {
+    max-width: 580px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 64px;
+  }
+  .advantages {
+    max-width: 580px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .teams {
+    background-position: 100% 0%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .advantages-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages-wrapper::before {
+    margin-bottom: 16px;
+  }
+  .advantages-text {
+    text-align: center;
+  }
+}
+
 .site-footer__contact {
   background: #F67E7E url("../img/get-started.svg") no-repeat 0% 100%;
   padding-top: 76px;
