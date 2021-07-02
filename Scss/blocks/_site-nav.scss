@@ -49,6 +49,7 @@
         right: -100%;
         height: 100vh;
         width: 70vw;
+        z-index: 99;
         transition: 0.5s ease;
         background:$police-blue url("../img/mobile-nav-img.png") no-repeat 100% 100%;
     }
