@@ -26,3 +26,35 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+
+.site-title{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.site-text_main{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.site-text_secondary{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@include breakpoint-down(650px){
+    .site-title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+}

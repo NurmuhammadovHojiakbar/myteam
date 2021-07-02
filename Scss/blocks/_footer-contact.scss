@@ -1,0 +1,34 @@
+.site-footer__contact{
+    background: $light-colar url("../img/get-started.svg") no-repeat 0% 100%;
+    padding-top: 76px;
+    padding-bottom: 76px;
+}
+
+.footer-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    max-width: 970px;
+}
+
+.footer-contact__title{
+    color: $sacramento-green;
+    margin-right: 20px;
+}
+
+@include breakpoint-down(500px){
+    .footer-contact{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact__title{
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+}
