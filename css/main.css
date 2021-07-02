@@ -815,4 +815,10 @@ img {
     margin-bottom: 25px;
   }
 }
+
+.site-footer__container {
+  background-color: #002529;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
 /*# sourceMappingURL=main.css.map */
