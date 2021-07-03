@@ -1,0 +1,29 @@
+.testimonials{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background: url("../img/testimon-top.svg") no-repeat 0% 0%,
+                url("../img/testimon-bottom.svg") no-repeat 100% 100%;
+}
+
+
+.testimonials__container{
+    @include flex-column;
+    align-items: center;
+    text-align: center;
+}
+
+.testimon-title{
+    max-width: 950px;
+    margin-bottom: 56px;
+
+    span{
+        color: $rapture-blue;
+    }
+}
+
+@include breakpoint-down(780px){
+    .testimon-title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+}

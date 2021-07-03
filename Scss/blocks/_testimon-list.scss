@@ -1,0 +1,66 @@
+.testimonials__list{
+    @include list-unstyled;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonials__item{
+    position: relative;
+    max-width: 350px;
+    text-align: center;
+    margin-bottom: 48px;
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+
+    &::before{
+        position: absolute;
+        content: "";
+        width: 67px;
+        height: 56px;
+        z-index: -1;
+        background: url("../img/quote.svg") no-repeat center center;
+        background-size: contain;
+        left: 50%;
+        transform: translateX(-50%) translateY(-30%);
+    }
+}
+
+.testimonials__info{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.testimon-name{
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: $rapture-blue;
+}
+
+.testimon-job{
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 32px;
+}
+
+
+@include breakpoint-down(780px){
+    .testimonials__item{
+        max-width: 600px;
+
+        &:not(:last-child){
+            margin-right: 0;
+        }
+    }
+}
