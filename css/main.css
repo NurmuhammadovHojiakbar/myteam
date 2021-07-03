@@ -1211,6 +1211,10 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: 0;
+  }
+  .clients-img {
+    margin-right: 0;
   }
 }
 
