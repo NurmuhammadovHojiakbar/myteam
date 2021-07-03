@@ -1,0 +1,42 @@
+.clients{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background: $sacramento-green url("../img/clients.svg") no-repeat 0% 0%;    
+}
+
+.clients__container{
+    text-align: center;
+
+    .site-title{
+        margin-bottom: 64px;
+    }
+}
+
+.clients-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: -30px;
+}
+
+.clients-img{
+    margin-right:30px;
+    margin-bottom: 50px;
+}
+
+@include breakpoint-down(750px){
+    .clients{
+        background: $sacramento-green url("../img/clients.svg") no-repeat 0% calc(0% - 100px);
+    }
+}
+
+@include breakpoint-down(500px){
+    .clients{
+        background: $sacramento-green url("../img/clients.svg") no-repeat calc(0% - 100px) calc(0% - 100px);
+    }
+
+    .clients-logo{
+        flex-direction: column;
+    }
+}
