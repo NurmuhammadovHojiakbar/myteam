@@ -30,8 +30,33 @@
     </header>
     
 
-    <main class="site-main about-main">
-        
+    <main class="site-main contact-main">
+        <section class="contact-container container">
+            <div class="contact-container__text">
+                <h2 class="contact-title">Contact</h2>
+                <h3 class="contact-ask-title">Ask us about</h3>
+                <ul class="contact__list">
+                    <li class="contact__item quality">
+                        <p class="contact__text site-text_main">The quality of our talent network</p>
+                    </li>
+                    <li class="contact__item implementation">
+                        <p class="contact__text site-text_main">Usage & implementation of our software</p>
+                    </li>
+                    <li class="contact__item innovation">
+                        <p class="contact__text site-text_main">How we help drive innovation</p>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" name="name" id="name" placeholder="Name" required aria-label="Enter your name">
+                <input type="email" name="email" id="email" placeholder="Email Address" required aria-label="Enter your email">
+                <input type="text" name="company-name" id="company-name" placeholder="Company Name" required aria-label="Enter your company name">
+                <input type="text" name="title" id="title" placeholder="Title" required aria-label="Enter your title">
+                <textarea name="message" id="message" rows="5" placeholder="Message" required aria-label="Enter your message"></textarea>
+                <button class="button button_secondary" type="submit">submit</button>
+            </form>
+        </section>
     </main>
 
 

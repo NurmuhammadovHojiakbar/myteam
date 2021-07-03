@@ -1,0 +1,28 @@
+.contact-form{
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+
+    input, textarea{
+        border: none;
+        border-bottom: 1px solid #fff;
+        background-color: transparent;
+        margin-bottom: 25px;
+        padding-left: 14px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+
+        &::placeholder{
+            color: #fff;
+            opacity: 0.6;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+
+    .button{
+        width: 125px;
+    }
+}

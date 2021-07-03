@@ -1,0 +1,61 @@
+.contact-title{
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100px;
+}
+
+.contact-ask-title{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: $light-colar;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.contact__list{
+    @include list-unstyled;
+    text-align: start;
+}
+
+.contact__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    &::before{
+        flex-shrink: 0;
+        content: "";
+        width: 72px;
+        height: 72px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        margin-right: 23px;
+    }
+}
+
+.quality::before{
+    background-image: url("../img/individual.svg");
+}
+
+.implementation::before{
+    background-image: url("../img/implement.svg");
+}
+
+.innovation::before{
+    background-image: url("../img/productivity.svg");
+}
+
+.contact__text{
+    font-weight: bold;
+}
+
+@include breakpoint-down(500px){
+    .contact-title{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
