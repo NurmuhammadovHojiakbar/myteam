@@ -1,0 +1,100 @@
+.director-card{
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    background-color: $sacramento-green;
+    text-align: center;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 56px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+.director-img{
+    margin-bottom: 16px;
+}
+.director-name{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: $rapture-blue;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.director-job{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.director-button{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    cursor: pointer;
+    border: none;
+    border-radius: 100%;
+    background-color: $light-colar;
+    background-image: url("../img/plus.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+    padding: 20px;
+    z-index: 5;
+    transition: 0.3s ease;
+
+    &:hover{
+        transform: translateX(-50%) translateY(50%) rotate(45deg);
+    }
+    
+}
+
+.director-button__focus{
+        background-color: $rapture-blue;
+        transform: translateX(-50%) translateY(50%) rotate(45deg);
+}
+
+.director-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $dark-green;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    z-index: -5;
+
+    .director-name{
+        margin-bottom: 8px;
+    }
+
+    a{
+        transition: 0.3s ease;
+        display: inline-block;
+
+        &:not(:last-child){
+            margin-right: 16px;
+        }
+        &:hover path{
+            fill: $light-colar;
+        }
+    }
+}
+
+.director-info__text{
+    margin-top: 0;
+    margin: 24px;
+}
+
+.director-info__active{
+    z-index: 4;
+}
+
