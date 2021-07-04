@@ -15,21 +15,16 @@ elClose.addEventListener("click", function(){
 const elPlusButton = document.querySelectorAll(".director-button");
 const elDirectorInfo = document.querySelectorAll(".director-info");
 
-if(elPlusButton.length > 0){
-    elPlusButton.forEach(function(plus){
-        plus.addEventListener("click", function(){
-            elPlusButton.forEach(function(item){
-                item.classList.remove("director-button__focus")
-             })
-            elDirectorInfo.forEach(function(off){
-                off.classList.remove("director-info__active")
-             })
-    
-            plus.classList.add("director-button__focus")
-                
-               
-    
+for(let i=0; i<elPlusButton.length; i++){
+    elPlusButton[i].addEventListener("click", function(){
+        elPlusButton.forEach(function(itemA){
+            itemA.classList.remove("director-button__focus")
         })
+        elDirectorInfo.forEach(function(itemB){
+            itemB.classList.remove("director-info__active")
+        })
+
+        elPlusButton[i].classList.add("director-button__focus")
+        elPlusButton[i].nextElementSibling.classList.add("director-info__active")
     })
-    
 }
